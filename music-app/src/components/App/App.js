@@ -1,5 +1,8 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import Playlist from "../playlist/playlist";
+import SerachBar from ;
 
 function App() {
   return (
