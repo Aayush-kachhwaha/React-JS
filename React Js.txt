@@ -1,0 +1,10 @@
+first see the version of the node js by node --version
+second see the npm --version
+therd npn install create-react-app to create the react app
+ 
+to update the node js type npm install -g npm@(version no)
+
+
+not who to create a react project type in 
+npx create-react-app (name of the folder or app)
+
