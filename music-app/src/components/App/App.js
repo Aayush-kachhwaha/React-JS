@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 
 import Playlist from "../playlist/playlist";
-import SerachBar from ;
+import SerachBar from ".//SerachBar/SerachBar";
+
 
 function App() {
   return (
