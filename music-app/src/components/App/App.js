@@ -6,7 +6,15 @@ import SerachBar from ".//SerachBar/SerachBar";
 import SearchResults from ".//SearchResults/SearchResults";
 import Spotify from ".../uitl/Spotify";
 
-
+class App extends React.Component{
+  constructor(props){
+    super(props);
+  }
+  this.state={
+    SearchResults: [],
+    playlistName: "New Playlist",
+  }
+}
 
 function App() {
   return (
