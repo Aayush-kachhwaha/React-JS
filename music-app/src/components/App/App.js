@@ -7,25 +7,31 @@ import SearchResults from ".//SearchResults/SearchResults";
 import Spotify from ".../uitl/Spotify";
 
 class App extends React.Component{
-  constructor(props){
-    super(props);
+    constructor(props){
+      super(props);
+      
+      this.state={
+        SearchResults: [],
+        playlistName: "New Playlist",
+        playListTracks: []
+      };
+
+      this.search =this .search.bind(this);
+      this.addTrack = this.addTrack.bind(this);
+      this.removeTrack =this.removeTrack.bind(this);
+      this.updatePlaylistName= this.updatePlaylistName.bind(this);
+      this.savePlaylist= this/this.savePlaylist.bind(this);
+      this.removeTrackSearch =this.removeTrackSearch.bind(this);
+      this.doThese = this.doThese.bind(this);
+    }
     
-    this.state={
-      SearchResults: [],
-      playlistName: "New Playlist",
-      playListTracks: []
-    };
+    serch(term){
+      Spotify.search(term).then(SearchResults => {
+          this.setState({SearchResults : SearchResults});
+      });
+    }
 
-    this.search =this .search.bind(this);
-    this.addTrack = this.addTrack.bind(this);
-    this.removeTrack =this.removeTrack.bind(this);
-    this.updatePlaylistName= this.updatePlaylistName.bind(this);
-    this.savePlaylist= this/this.savePlaylist.bind(this);
-    this.removeTrackSearch =this.removeTrackSearch.bind(this);
-    this.doThese = this.doThese.bind(this);
-
-  }
-  
+    addTrack(tra)
   
 }
 
