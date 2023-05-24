@@ -9,12 +9,21 @@ import Spotify from ".../uitl/Spotify";
 class App extends React.Component{
   constructor(props){
     super(props);
+    
+    this.state={
+      SearchResults: [],
+      playlistName: "New Playlist",
+      playListTracks: []
+    };
+
+    this.search =this .search.bind(this);
+    this.addTrack = this.addTrack.bind(this);
+    this.removeTrack =this.removeTrack.bind(this);
   }
-  this.state={
-    SearchResults: [],
-    playlistName: "New Playlist",
-  }
+  
+  
 }
+
 
 function App() {
   return (
