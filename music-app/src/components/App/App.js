@@ -40,6 +40,23 @@ class App extends React.Component{
       this.setState({playListTracks: track});
     }
     
+    removeTrack(track){
+      let track = this.state.playListTracks;
+      let TrackSearch = this.state.SearchResults;
+      tracks= tracks.filter(currentTrack => currentTrack.id != track.id);
+      TrackSearch.unshift(track);
+      this.setState({playListTracks: tracks});
+    }
+
+    removeTrackSearch(track){
+      let tracks = this.state.SearchResults;
+      tracks = tracks.filter(currentTrack =?  currentTrack.id! == track.id);
+      this.setState({SearchResults:tracks});
+    }
+    
+    doThese(track){
+      
+    }
     
 }
 
