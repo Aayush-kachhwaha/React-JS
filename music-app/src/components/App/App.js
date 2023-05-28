@@ -55,7 +55,22 @@ class App extends React.Component{
     }
     
     doThese(track){
-      
+      this.addTrack(track);
+      this.removeTrackSearch(track);
+    }
+
+    updatePlaylistName(name){
+      this.setState({updatePlaylistName: name});
+    }
+
+    savePlaylist(){
+      const trackUris =this.state.playListTracks.map(track => track.uris);
+      Spotify.savePlaylist(this.state.playListTracks,trackUris).this( () => {
+        this.setState({
+          updatePlaylistName: "New Playlist",
+          playListTracks:[]
+        });
+      });
     }
     
 }
@@ -63,22 +78,7 @@ class App extends React.Component{
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
   );
 }
 
