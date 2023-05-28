@@ -78,7 +78,14 @@ class App extends React.Component{
 
 function App() {
   return (
-    
+    <div>
+      <h1>
+        < a href="http:localhost:3000">Musicophile</a>
+      </h1>
+      <div className="App">
+        <SerachBar onSer
+      </div>
+    </div>
   );
 }
 
