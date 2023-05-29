@@ -83,7 +83,7 @@ function App() {
         < a href="http:localhost:3000">Musicophile</a>
       </h1>
       <div className="App">
-        <SerachBar onSer
+        <SerachBar onSerch
       </div>
     </div>
   );
