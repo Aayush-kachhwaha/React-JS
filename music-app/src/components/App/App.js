@@ -32,7 +32,7 @@ class App extends React.Component{
     }
 
     addTrack(track){
-      let track =this.state.playListTracks;
+      let tracks = this.state.playListTracks;
       if (track.find(saveTrack => saveTrack.id === track.id)){
         return;
       }
@@ -41,7 +41,7 @@ class App extends React.Component{
     }
     
     removeTrack(track){
-      let track = this.state.playListTracks;
+      let tracks = this.state.playListTracks;
       let TrackSearch = this.state.SearchResults;
       tracks= tracks.filter(currentTrack => currentTrack.id != track.id);
       TrackSearch.unshift(track);
@@ -50,7 +50,7 @@ class App extends React.Component{
 
     removeTrackSearch(track){
       let tracks = this.state.SearchResults;
-      tracks = tracks.filter(currentTrack =?  currentTrack.id! == track.id);
+      tracks = tracks.filter(currentTrack =>  currentTrack.id !== track.id);
       this.setState({SearchResults:tracks});
     }
     
@@ -83,7 +83,11 @@ function App() {
         < a href="http:localhost:3000">Musicophile</a>
       </h1>
       <div className="App">
-        <SerachBar onSerch
+        <SerachBar onSerch={this.serch} />
+        <div className="App-playlist">
+          <SearchResults SearchResults={this.state.SearchResults} onAdd={this.doThese} />
+          <Playlist playListTracks={this.state.playListTracks} onNameChange={this.updatePlaylistName} onRemove={this.removeTrack} onSave={this.savePlaylist}/>
+        </div>
       </div>
     </div>
   );
