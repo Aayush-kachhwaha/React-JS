@@ -34,4 +34,6 @@ class SerachBar extends React.Component{
             </div>
         };
     }
-}
+
+
+export default SerachBar;
