@@ -13,3 +13,5 @@ First see the version of the node js as=> node --version
 Second see the npm version as => npm --version
 <br>
 Therd npn install create-react-app to create the react app to update the node js type npm install -g npm@(version no) not who to create a react project type in npx create-react-app (name of the folder or app)
+
+<br> If by any way it is showing the error that the npm install the run the following code in cmd it will may remove the problem that your are facing the while running the react project :-- npm install react react-dom
