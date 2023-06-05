@@ -1,5 +1,6 @@
 React native app:-
 	npx create-react-app name
+	yarn create-react-app name
 Next native app:-
 	npx create-next-app name
 Remix native apps:-
