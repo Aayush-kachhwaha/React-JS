@@ -1,0 +1,36 @@
+React native app:-
+	npx create-react-app name
+Next native app:-
+	npx create-next-app name
+Remix native apps:-
+	npx create-remix name
+Gatsby native apps:-
+	npx create-gatsby name
+Expo native apps:-
+	npx create-expo-app name
+
+Install the npm:-
+	npm install
+
+Material UI:-
+For default installation
+	npm install @mui/material @emotion/react @emotion/styled
+	yarn add @mui/material @emotion/react @emotion/styled
+
+with styled components
+	npm install @mui/material @mui/styled-engine-sc styled-components
+	yarn add @mui/material @mui/styled-engine-sc styled-components
+
+for Robot font
+	npm install @fontsource/roboto
+	yarn add @fontsource/roboto
+
+for google web fonts
+	npm install @mui/icons-material
+	yarn add @mui/icons-material
+
+Firebase:-
+	npm install firebase
+	yarn add firebase
+
+
