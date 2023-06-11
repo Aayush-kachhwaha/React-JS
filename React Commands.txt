@@ -34,4 +34,7 @@ Firebase:-
 	npm install firebase
 	yarn add firebase
 
+For the hosting or deployment of the web sit we can do this with many ways from which one is GitHub
+
+
 
