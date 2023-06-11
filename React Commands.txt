@@ -36,6 +36,7 @@ Firebase:-
 
 For the hosting or deployment of the web sit we can do this with many ways from which one is GitHub.
 For deployment in on GitHub first we need to add the home page in the json file of the react project in which we are working on.
-
+After that we need to build the react project in the terminal.
+npm run build 
 
 
