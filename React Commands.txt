@@ -35,8 +35,27 @@ Firebase:-
 	yarn add firebase
 
 For the hosting or deployment of the web sit we can do this with many ways from which one is GitHub.
+
 For deployment in on GitHub first we need to add the home page in the json file of the react project in which we are working on.
+
+npm install --save gh-pages
+
+Add homepage url 
+"homepage": "https://gitname.github.io/react-gh-pages",
+
+
+add this 
+
+"scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+
+
 After that we need to build the react project in the terminal.
 npm run build 
+npm run deploy
+
 
 
